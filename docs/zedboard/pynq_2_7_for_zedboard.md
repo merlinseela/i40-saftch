@@ -211,7 +211,7 @@ source /tools/petalinux/2020.2/settings.sh
 ## (Attempting to) Build PYNQ 2.7
 ### Update build scripts/files
 #### Skip original build.sh
-Navigate to `` and update the entire file with:
+Navigate to `PYNQ\build.sh` and update the entire file with:
 ```bash
 #!/bin/bash
 echo "Skipping global build.sh"
@@ -219,6 +219,14 @@ exit 0
 ```
 This skips the `build.sh` file but exits it cleanly so depending processes assume it went fine.
 
+#### Skip original sw_repo Makefile
+Navigate to `PYNQ\boards\sw_repo\Makefile` and update the entire file with:
+```Makefile
+all:
+	@echo 'Skipping sw_repo'
+clean:
+	@echo 'Skipping clean'
+```
 
 ### Delete any Boards that are not Zedboard
 Navigate to `/PYNQ/boards/`. In this folder you will find multiple boards and other components. Delete everything except for: `ip` and `sw_repo`.
@@ -291,7 +299,7 @@ For this we went with [Rufus](https://rufus.ie/en/).
     4. The Informations below the boot selection should autofill.
     5. Hit `START` and enter `OK` the two times Rufus is warning after you hit `START`.
 4. Extract the SD-Card safely from your computer.
-5. Put it into the Zedboard and turn the power on it.
+5. Put it into the Zedboard and turn the power on.
 
 > [!IMPORTANT]  
 > Check the Jumper-Configuration on your Zedboard before starting it. It has to be put into _"Boot from SD-Card"_-Mode. For this search for the Jumper-Array J07 to J11. The following table illustrates how to setup these 5 Jumpers for SD-Mode.
