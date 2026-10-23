@@ -1,0 +1,10 @@
+name: tsfpga build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  placeholder:
+    runs-on: self-hosted
+    steps:
+      - run: echo "Placeholder to enable the UI button. Development is done in branches not in main..."
