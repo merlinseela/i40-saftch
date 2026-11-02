@@ -66,6 +66,9 @@ class EdgeAgentDaemon:
             if isinstance(self.current_state, PollJobsState):
                 print("[I40-SAFTCH-DAEMON] Creating fresh Job Context!")
                 self.job_context = JobContext()
+                # Sleep to not let the Daemon become a DDOS-Zombie when HiL-Tests are finished "too fast" and many jobs are queued on the SSOT. 
+                print(f"[I40-SAFTCH-DAEMON] Sleep for {self.job_context.daemon_environment['SLEEP_BETWEEN_JOBS_SECOND']} between jobs")
+                time.sleep(self.job_context.daemon_environment['SLEEP_BETWEEN_JOBS_SECOND'])
 
             print(f"[I40-SAFTCH-DAEMON] Executing state: {type(self.current_state).__name__}!")
             status = self.current_state.execute(self.job_context)
