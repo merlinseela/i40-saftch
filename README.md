@@ -1,6 +1,8 @@
 > [!IMPORTANT]  
 > The repository is currently under construction! The release date for the `V0.1.0` is scheduled on the 10th November 2026. Thank you for your understanding.
 
+![github_banner](./github_banner.jpg)
+
 # i40-saftch
 Industry 4.0 Star-API Framework for Testing Continuously on Hardware
 
