@@ -1,2 +1,5 @@
 # Python Development
 __pycache__/
+
+# V0.2.0 Releasse ignores
+*/daemon_setup/*
