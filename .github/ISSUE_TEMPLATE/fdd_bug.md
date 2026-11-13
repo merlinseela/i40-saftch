@@ -7,23 +7,24 @@ assignees: ""
 ---
 
 > [!TIP]
-> Keep answers concise (2-5 bullet points or sentences per section). If your issue is larger than that, please separate it into smaller, linked issues. [Contact the developers]() if you need help splitting up a "god-issue".
+> Hi there! Thank you for reporting a bug.
 >
-> **Title Format:** Please ensure your issue title follows the FDD syntax above (e.g., *"Restore the connection stability of the Proxy-API"*).
+> Keep answers concise (2-5 bullet points or sentences per section). If your issue is larger than that, please separate it into smaller, linked issues. [Contact the developers](https://github.com/merlinseela/i40-saftch/discussions) if you need help splitting up a "god-issue".
+>
+> **Title Format:** Please ensure your issue title follows the Feature-Driven-Development (FDD) syntax above (e.g., *"Restore the connection stability of the Proxy-API"*).
+>
+> *(You can delete this tip box once you have read it.)*
 
 ### 1. The Bug
 **Expected vs. Actual Behavior**
 > * What was the intended solution or value you were looking for?
 > * What actually happened instead?
 
-[Your answer here]
-
-**Reproduction**
-> * How to provoke this bug again?
-> * Which exact component(s) from the framework didn't work?
-> * How would you verify it was fixed? 
-
-[Your answer here]
+**Reproduction Steps**
+> 1. [First Step, e.g., "Start the hildaemon with config X"]
+> 2. [Second Step, e.g., "Send a POST request to (route) /register_device"]
+> 3. [Resulting Error, e.g., "Daemon crashes with Port 5000 blocked"]
+> *(Add or remove steps as needed)*
 
 ### 2. Proposed Solution (Root Cause & Fix)
 **Implementation Path**
@@ -45,4 +46,5 @@ Please supply the following if applicable to help us debug faster:
 - [ ] Relevant manifests (if they differ from the stable framework)
 - [ ] Boilerplate code or test-payloads (`.py`, `.yaml`) to reproduce the bug
 
-> *Final Check: Did you answer all sections? If a section doesn't apply, please write "N/A" and provide one reason why.*
+> [!IMPORTANT]
+> **Final Check:** *Did you answer all sections? If a section doesn't apply, please write "N/A" and provide one reason why. (You can Delete this Note after reading it.)* 

@@ -7,9 +7,13 @@ assignees: ""
 ---
 
 > [!TIP]
-> Keep answers concise (2-5 bullet points or sentences per section). If your feature is larger than that, please separate it into smaller, linked issues. [Contact the developers]() if you need help splitting up a "god-issue".
+> Hi there! Thank you for suggesting a feature.
+>
+> Keep answers concise (2-5 bullet points or sentences per section). If your feature is larger than that, please separate it into smaller, linked issues. [Contact the developers](https://github.com/merlinseela/i40-saftch/discussions) if you need help splitting up a "god-issue".
 >
 > **Title Format:** Please ensure your issue title follows the FDD syntax above (e.g., *"Route the status logs of the Hardware-Daemon"*).
+>
+> *(You can delete this tip box once you have read it.)*
 
 ### 1. Goal & Success Metric
 **Business/Scientific Value**
@@ -47,4 +51,5 @@ Please supply the following if applicable to help speed up development:
 - [ ] Example manifests or payload structures (e.g. `.json`, `.yaml`)
 - [ ] Draft test-cases or boilerplate code (e.g. `.py`, `.vhdl`)
 
-> *Final Check: Did you answer all sections? If a section doesn't apply, please write "N/A" and provide one reason why.*
+> [!IMPORTANT]
+> **Final Check:** *Did you answer all sections? If a section doesn't apply, please write "N/A" and provide one reason why. (You can Delete this Note after reading it.)* 
