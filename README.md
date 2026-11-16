@@ -1,6 +1,3 @@
-# i40-SAFTCH
-**Industry 4.0 Star-API Framework for Testing Continuously on Hardware**
-
 ![i40-SAFTCH Banner](github_banner.jpg)
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
