@@ -1,16 +1,9 @@
 # i40-SAFTCH Conventional Commit Cheat Sheet
 
-To ensure our automated changelog generation works correctly across the SAFTCH monorepo, all pull request titles must follow the Conventional Commits specification, including a **scope**.
+To ensure our automated changelog generation works correctly across the SAFTCH monorepo, all pull request titles must follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 
-**Format:** `prefix(scope): description`
-
-## Valid Scopes
-The scope indicates the specific part of the framework your pull request modifies. Please use one of the following standard scopes:
-- **`edge`** - Changes related to the hardware edge nodes or edge daemon.
-- **`ssot`** - Changes related to the Single Source of Truth, proxy server, or API.
-- **`docs`** - Changes strictly to the documentation folder or repository markdown files.
-- **`ci`** - Changes to GitHub Actions, workflows, or repository configurations.
-- **`github`** -  Global changes that affect the entire repository (e.g., license updates, global `.gitignore`).
+- **Mandatory Format:** `prefix: description`
+- *Optional Format:* `prefix(scope): description`
 
 ## Valid Prefixes
 | Prefix | Example | Explanation |
@@ -24,4 +17,10 @@ The scope indicates the specific part of the framework your pull request modifie
 | **test** | `test(edge): add unit tests for hardware mock` | Adding missing tests or correcting existing automated tests. |
 | **build** | `build(ssot): update pip dependencies and setup.py` | Changes that affect the build system, package versions, or external dependencies. |
 | **ci** | `ci(repo): configure GitHub Actions for pre-flight linting` | Changes to CI/CD configuration files, workflows, and automated scripts. |
-| **chore** | `chore(repo): clean up unused variables in test suite` | Routine tasks, maintenance, or minor adjustments that do not modify source code or tests. |
+| **chore** | `chore(repo): update .gitignore rules` | Routine tasks, maintenance, or minor adjustments that do not modify source code or tests. |
+
+## Valid Scopes
+The scope indicates the specific part of the framework your pull request modifies. Please use one of the following standard scopes:
+- **`edge`** - Changes related to the hardware edge nodes or edge daemon.
+- **`ssot`** - Changes related to the Single Source of Truth, proxy server, or API.
+- **`repo`** - Global changes that affect the entire repository (e.g., license updates, global `.gitignore`).
