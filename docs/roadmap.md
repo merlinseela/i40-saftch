@@ -5,6 +5,13 @@
 >
 > Want to pull a feature forward, add support for another hardware target, or propose something not listed here? Contributions outside this baseline are explicitly welcome. Open a [Discussion](https://github.com/merlinseela/i40-saftch/discussions) to align before diving in.
 
+| Status | Meaning | Release blocks |
+| --- | --- | --- |
+| Done | Completed work | v0.1.0 |
+| Active | Work in progress | v0.1.1 |
+| Planned | Work on the roadmap | v0.2.0, v0.3.0, v0.3.1 |
+| Future | Work without a release version | Looking Ahead |
+
 ```mermaid
 ---
 config:
@@ -70,4 +77,12 @@ flowchart TD
     class v011 active
     class v020,v030,v031 planned
     class vXXX future
+
+    subgraph statusLegend["Status legend"]
+        direction LR
+        legendDone["Done"]:::done
+        legendActive["Active"]:::active
+        legendPlanned["Planned"]:::planned
+        legendFuture["Future"]:::future
+    end
 ```
