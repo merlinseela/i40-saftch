@@ -1,7 +1,7 @@
 # Roadmap
 
 > [!NOTE]  
-> This section is currently under construction. Setting up the entire toolchain (Single Source of Truth, Edge Daemon) of this framework is not a 10-minute task. *But* automation is on the way with later releases. If you want to know what is coming and/or want to help with the development, check out the [Issue Section](https://github.com/merlinseela/i40-saftch/issues) and [Contributing Guide](CONTRIBUTING.md) as well as the [Roadmap](docs/roadmap.md)!
+> This section is currently under construction. Setting up the entire toolchain (Single Source of Truth, Edge Daemon) of this framework is not a 10-minute task. *But* automation is on the way with later releases. If you want to know what is coming and/or want to help with the development, check out the [Issue Section](https://github.com/merlinseela/i40-saftch/issues) and [Contributing Guide](CONTRIBUTING.md) as well as the [Roadmap](/docs/roadmap.md)!
 
 ```mermaid
 ---
