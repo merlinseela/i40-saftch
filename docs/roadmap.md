@@ -1,7 +1,9 @@
-# Roadmap
+# i40-saftch Roadmap
 
-> [!NOTE]  
-> This section is currently under construction. Setting up the entire toolchain (Single Source of Truth, Edge Daemon) of this framework is not a 10-minute task. *But* automation is on the way with later releases. If you want to know what is coming and/or want to help with the development, check out the [Issue Section](https://github.com/merlinseela/i40-saftch/issues) and [Contributing Guide](CONTRIBUTING.md) as well as the [Roadmap](/docs/roadmap.md)!
+> [!NOTE]
+> This roadmap is a living document. It communicates the general direction and current baseline of the core maintainers and contributors, not a rigid schedule set in stone.
+>
+> Want to pull a feature forward, add support for another hardware target, or propose something not listed here? Contributions outside this baseline are explicitly welcome. Open a [Discussion](https://github.com/merlinseela/i40-saftch/discussions) to align before diving in.
 
 ```mermaid
 ---
@@ -12,16 +14,18 @@ config:
 ---
 
 flowchart TD
-    v010["`**v0.1.0 ─ saftch Proof of Concept** 
+    v010["`**v0.1.0 ─ saftch Proof of Concept (PoC)** 
         ───────────────────────────────────────────────────────────
-        • PoC: ZedBoard HiLDaemon + FastAPI-ACL-Proxy + BaSyx-Backend
+        • PoC: ZedBoard HiLDaemon + 
+        &nbsp; &nbsp;FastAPI-Proxy as Anti-Corruption-Layer (ACL) +
+        &nbsp; &nbsp;BaSyx-Backend
         `"]
     v011["`**v0.1.1 ─ saftch PoC Stabilization & Documentation Patch** 
         ───────────────────────────────────────────────────────────
         • Language-agnostic Documentation (LaD) of PoC
         • Align/Refactor of ZedBoard HiLDaemon to fit LaD 
         • Align/Refactor of FastAPI-ACL-Proxy to fit LaD
-        • Migrate PoC AAS templates from AASX to JSON
+        • Migrate PoC Asset Administration Shell (AAS) templates from AASX to JSON
         `"]
     v020["`**v0.2.0 ─ Single-Target Fleet Management**
         ───────────────────────────────────────────────────────────
@@ -36,7 +40,7 @@ flowchart TD
     v030["`**v0.3.0 ─ Idempotent Setup**
         ───────────────────────────────────────────────────────────
         • HiLDaemon (ZedBoard) provisioning (setup.sh + systemd on PYNQ 2.7)
-        • SSOT provisioning (docker compose + nginx template)
+        • Singel-Source-of-Truth (SSOT) provisioning (docker compose + nginx template)
         • LaD for Linux-based HiLDaemon deployment
         • LaD for Linux-based Server deployment
         `"]
