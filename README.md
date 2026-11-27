@@ -21,10 +21,10 @@ i40-SAFTCH is structured as a monorepo, divided into distinct scopes to cleanly 
 
 - **`/edge`**: Contains the stateless HiLDaemons, hardware interfaces, and state machines running directly on the hardware targets (e.g., Zedboard/Zynq). These are custom-implemented per hardware family.
 - **`/ssot`**: The Single Source of Truth. Contains the FastAPI proxy, AAS templates, and deployment configurations that manage the fleet of edge devices.
-- **`/docs`**: Framework documentation, hardware specs, and repository governance (including our [Conventional Commits Cheat Sheet](docs/repository_governance/cheatsheet_conventional_commits.md)).
+- **`/docs`**: Framework documentation, hardware specs, and repository governance (including our [Conventional Commits Cheat Sheet](docs/repository_governance/cheatsheet_conventional_commits.md) and [Roadmap](/docs/roadmap.md)).
 - **`/.github`**: CI/CD workflows for repository governance, issue templates, and automated pre-flight checks.
 
 ## 🚀 Getting Started
 
 > [!NOTE]  
-> This section is currently under construction. Setting up the entire toolchain (Single Source of Truth, Edge Daemon) of this framework is not a 10-minute task. *But* automation is on the way with later releases. If you want to know what is coming and/or want to help with the development, check out the [Issue Section](https://github.com/merlinseela/i40-saftch/issues) and [Contributing Guide](CONTRIBUTING.md)!
+> This section is currently under construction. Setting up the entire toolchain (Single Source of Truth, Edge Daemon) of this framework is not a 10-minute task. *But* automation is on the way with later releases. If you want to know what is coming and/or want to help with the development, check out the [Issue Section](https://github.com/merlinseela/i40-saftch/issues) and [Contributing Guide](CONTRIBUTING.md) as well as the [Roadmap](/docs/roadmap.md)!
