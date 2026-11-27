@@ -1,6 +1,7 @@
 # i40-SAFTCH CODEOWNERS
 
 README.md @merlinseela
+docs/roadmap.md @merlinseela
 
 # Contributing and Templates
 CONTRIBUTING.md @merlinseela
